@@ -9,8 +9,10 @@ project "lodepng"
 
 	files
 	{
-		"**.h",
-		"**.cpp"
+		"lodepng.h",
+		"lodepng.cpp",
+		"lodepng_util.h",
+		"lodepng_util.cpp"
 	}
 
 	defines
