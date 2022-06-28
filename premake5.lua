@@ -15,10 +15,6 @@ project "lodepng"
 		"lodepng_util.cpp"
 	}
 
-	defines
-	{
-	}
-
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "On"
@@ -26,6 +22,7 @@ project "lodepng"
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "On"
+		symbols "Off"
 
 		flags
 		{
@@ -35,6 +32,7 @@ project "lodepng"
 	filter "configurations:Dist"
 		runtime "Release"
 		optimize "On"
+		symbols "Off"
 
 		flags
 		{
