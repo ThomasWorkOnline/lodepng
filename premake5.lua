@@ -24,16 +24,18 @@ project "lodepng"
 		optimize "On"
 		symbols "Off"
 
-		flags
-		{
-			"LinkTimeOptimization"
-		}
-
 	filter "configurations:Dist"
 		runtime "Release"
 		optimize "On"
 		symbols "Off"
 
+	filter { "configurations:Release", "system:windows" }
+		flags
+		{
+			"LinkTimeOptimization"
+		}
+
+	filter { "configurations:Dist", "system:windows" }
 		flags
 		{
 			"LinkTimeOptimization"
