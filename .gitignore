@@ -9,8 +9,7 @@
 .vscode
 
 # Makefile
-Makefile
-makefile
+[Mm]akefile
 
 # macOS files
 .DS_Store
